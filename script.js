@@ -105,3 +105,55 @@ function contarVogais(str){
     console.log(vogais);
 }
 contarVogais(vogal);
+
+console.log(contarVogais(palavracomvogal));
+
+let quantiarray = prompt("Quantos números você quer colocar na array")
+let arraysoma = 0;
+function somaArray(str){
+    let total = 0;
+    for( let i = 0; i >= str; i++){
+        arraysoma[i] = prompt("Fala um número")
+
+    }
+    for( let i = 0; i >= str; i++){
+        total = total + arraysoma[1];
+        
+    }
+    console.log(total)
+}
+somaArray(quantiarray)
+
+let number = prompt("Fala um número por gentileza")
+function dobrarNumero(){
+    let dobro = number * 2;
+    console.log(dobro)
+}
+dobrarNumero(number)
+
+let contador = 2;
+while(contador <= 20){
+    if(contador % 2 == 0){
+        console.log(contador)
+    }
+    contador++;
+}
+
+
+let palavra2 = prompt("Fala uma palavra")
+function capitalizar(str){
+    let transformar = str[0].toUpperCase() + str.substr(1);
+    console.log(transformar)
+}
+capitalizar(palavra2)
+
+let ano = prompt("Fala um ano ai")
+function anoBissexto(ano){
+    if((ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0)){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+anoBissexto(ano)
